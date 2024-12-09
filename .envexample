@@ -1,1 +1,10 @@
 PORT=3000
+# CURSOR_CHECKSUM=zo6Qjequ9b9734d1f13c3438ba25ea31ac93d9287248b9d30434934e9fcbfa6b3b22029e/7e4af391f67188693b722eff0090e8e6608bca8fa320ef20a0ccb5d7d62dfdef
+# Development settings
+NODE_ENV=development
+LOG_RESPONSES=false
+
+# Telemetry settings (optional)
+MAC_MACHINE_ID=
+MACHINE_ID=
+DEVICE_ID=

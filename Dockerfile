@@ -8,15 +8,22 @@ COPY package*.json ./
 
 # 设置环境变量
 ENV NODE_ENV=production
+ENV PORT=3000
 
 # 安装依赖
-RUN npm install
+RUN npm install --production
 
 # 复制源代码
 COPY . .
+
+# 设置适当的权限
+RUN chown -R node:node /app
+
+# 切换到非root用户
+USER node
 
 # 暴露端口
 EXPOSE 3000
 
 # 启动命令
-CMD ["npm", "start"] 
+CMD ["node", "src/index.js"] 

@@ -6,4 +6,8 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - PORT=3000
+      - CURSOR_CHECKSUM=${CURSOR_CHECKSUM}
+    volumes:
+      - ./logs:/app/logs
     restart: always 

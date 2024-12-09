@@ -1,3 +1,11 @@
 .env
 tests/
 # sslkey.log
+node_modules/*
+*.iml
+*.tmp
+*.temp
+*.swp
+*.swo
+*.log
+.idea/
